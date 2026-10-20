@@ -8,9 +8,25 @@
     <h2>Level 1</h2>
     <h3 id="Q1">5 + 5 = ?</h3>
     <button onclick="reveal()">Answer</button>
+
+    <h2 id="L2">Level 2</h2>
+    <h3 id="Q2">Red + Blue = ?</h3>
+    <button onclick="reveal2()">Answer</button>
+
+    <h2 id="L3">Level 3</h2>
+    <h3 id="Q3">How many months have 28 days?</h3>
+    <button onclick="reveal3()">Answer</button>
+
+    
     <script>
-        function reveal(){
+        function reveal1(){
             document.getElementById("Q1").innerHTML = "10";
+        }
+        function reveal2(){
+            document.getElementById("Q2").innerHTML = "Purple";
+        }
+        function reveal3(){
+            document.getElementById("Q3").innerHTML = "12";
         }
   </body>
 </html>
