@@ -8,14 +8,17 @@
     <h2>Level 1</h2>
     <h3 id="Q1">5 + 5 = ?</h3>
     <button onclick="reveal()">Answer</button>
+    <button onclick="reset1()">Reset</button>
 
     <h2 id="L2">Level 2</h2>
     <h3 id="Q2">Red + Blue = ?</h3>
     <button onclick="reveal2()">Answer</button>
+    <button onclick="reset2()">Reset</button>
 
     <h2 id="L3">Level 3</h2>
     <h3 id="Q3">How many months have 28 days?</h3>
     <button onclick="reveal3()">Answer</button>
+    <button onclick="reset3()">Reset</button>
 
     
     <script>
@@ -27,6 +30,16 @@
         }
         function reveal3(){
             document.getElementById("Q3").innerHTML = "12";
+        }
+
+        function reset1(){
+            document.getElementById("Q1").innerHTML = "5 + 5 = ?";
+        }
+        function reset2(){
+            document.getElementById("Q2").innerHTML = "Red + Blue = ?";
+        }
+        function reset3(){
+            document.getElementById("Q3").innerHTML = "How many months have 28 days?";
         }
   </body>
 </html>
